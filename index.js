@@ -7,10 +7,12 @@ app.use(cors());
 
 const PORT = process.env.PORT || 3000;
 
+// Главна страница - просто показва, че API-то работи
 app.get("/", (req, res) => {
-  res.send("Tattoo Proxy is running!");
+  res.send("Tattoo Proxy is running successfully!");
 });
 
+// Route за извличане на tattoo events
 app.get("/events", async (req, res) => {
   try {
     const response = await fetch("https://tattooevents.co.uk/api/events");
@@ -22,7 +24,7 @@ app.get("/events", async (req, res) => {
   }
 });
 
+// Стартиране на сървъра
 app.listen(PORT, () => {
-  console.log( Server running on port ${PORT});
+  console.log(Server running on port ${PORT});
 });
-
