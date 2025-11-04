@@ -7,7 +7,7 @@ app.use(cors());
 
 const PORT = process.env.PORT || 3000;
 
-// Главна страница - просто показва, че API-то работи
+// Главна страница — просто показва, че API-то работи
 app.get("/", (req, res) => {
   res.send("Tattoo Proxy is running successfully!");
 });
