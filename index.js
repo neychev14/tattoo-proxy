@@ -26,5 +26,6 @@ app.get("/events", async (req, res) => {
 
 // Стартиране на сървъра
 app.listen(PORT, () => {
-  console.log(Server running on port ${PORT});
+  console.log(✅ Server running on port ${PORT});
 });
+
