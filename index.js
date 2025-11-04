@@ -8,7 +8,7 @@ app.use(cors());
 const PORT = process.env.PORT || 3000;
 
 app.get("/", (req, res) => {
-  res.send("✅ Tattoo Proxy is running!");
+  res.send("Tattoo Proxy is running!");
 });
 
 app.get("/events", async (req, res) => {
@@ -23,5 +23,6 @@ app.get("/events", async (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(✅ Server running on port ${PORT});
+  console.log( Server running on port ${PORT});
 });
+
